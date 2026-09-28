@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(224, 223, 223);
+    padding: 0 16px 0 16px;
+}
+
+.logo-call{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 5px 25px;
+    border-radius: 0 0 0 40px;
+    background: radial-gradient(circle, #e6e0d8 20%, #a39787 100%);
+    box-shadow: 0 9px 16px rgba(139, 109, 71, 1.15);
+}
+
+.logo img{
+    max-width: 40px;
+    height: auto;
+}
+
+.time{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.glavnaya{
+    max-width: 1200px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-image: url('../images/landing/header-fon.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 35px auto;
+    border-radius: 0 40px 0 0;
+    box-shadow: 0 9px 16px rgba(139, 109, 71, 1.15);
+}
