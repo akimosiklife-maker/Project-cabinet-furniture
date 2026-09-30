@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #fff;
+    padding: 20px 16px;
+    color: #1a202c;
+}
+
+/* ===== ЗАГОЛОВОК ===== */
+.catalog-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.catalog-header h1 {
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 700;
+    color: #0f2b46;
+    margin-bottom: 10px;
+}
+
+.catalog-section h2 {
+    text-align: center;
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 600;
+    color: #0f2b46;
+    margin-bottom: 30px;
+}
+
+/* ===== СЕТКА ===== */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: 1fr;   /* мобилка — 1 колонка */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .catalog-grid {
+        grid-template-columns: 1fr 1fr 1fr;  /* 3 колонки */
+        gap: 24px;
+    }
+}
+
+/* ===== КАРТОЧКА ===== */
+.catalog-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 9px 16px rgba(139, 109, 71, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.catalog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(139, 109, 71, 0.35);
+}
+
+.catalog-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.catalog-card p {
+    padding: 12px 16px;
+    font-size: clamp(13px, 1.2vw, 16px);
+    text-align: center;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* ===== ФУТЕР ===== */
+.catalog-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.catalog-footer a {
+    color: #4078ac;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.catalog-footer a:hover {
+    color: #0f2b46;
+    text-decoration: underline;
+}
